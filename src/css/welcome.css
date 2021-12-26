@@ -1,0 +1,159 @@
+
+.appWrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+
+.header {
+    color: hsl(292, 60%, 57%);
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+span {
+    color: black;
+}
+
+.text {
+    border-radius: 7px;
+    width: 350px;
+    background-color: hsl(292, 60%, 57%);
+    font-size: 1rem;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.text2 {
+    border-radius: 7px;
+    width: 350px;
+    font-size: 1.25rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.reasons {
+    border-radius: 7px;
+    width: 350px;
+    background-color: hsl(292, 60%, 57%);
+    padding: 1rem;
+    text-align: center;
+}
+
+.btnReason {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding:.25rem;
+    margin: .25rem;
+    cursor: pointer;
+}
+
+.btnReason:hover, .btnReason:focus {
+    background-color: hsl(0, 0%, 95%);
+    box-shadow: 0 0 5px 0 hsl(292, 60%, 27%);
+
+}
+
+.container {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.btn {
+    background-color: hsl(292, 60%, 57%);
+    color: white;
+    cursor: pointer;
+    width: 15vh;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: .3em;
+}
+
+.btnLogin {
+    margin-right: 1.3rem;
+}
+
+.btn:hover {
+    background-color: hsl(292, 60%, 47%);
+    box-shadow: 0 0 5px 0 hsl(292, 60%, 27%); 
+}
+
+@media screen and (min-width: 810px) and (max-width: 1600px) {
+    .appWrapper {
+        max-width: 1200px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;  
+        margin-bottom: 0;
+        height: auto;
+        grid-template-areas: 
+           "header container"
+           "text text"
+           "text2 reasons"
+           "text3 text3";
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .text {
+        padding: 0 15rem;
+        font-size: 1.25rem;
+        grid-area: text;
+        width: auto;
+        margin-bottom: 1rem;
+    }
+    .text2 {
+        grid-area: text2;
+        font-size: 1.25rem;
+        width: auto;
+    }
+
+    .text3 {
+        background-color: hsl(292, 60%, 57%);
+        padding: 0 15rem;
+        color: white;
+        border-radius: 7px;
+        margin-top: 1rem;
+        grid-area: text3;
+        width: auto;
+    }
+
+
+    .reasons {
+        padding: 1rem;
+        grid-area: reasons;
+        width: auto;
+    }
+
+    .btnReason {
+        width: 350px;
+    }
+
+    .container {
+        grid-area: container;
+        justify-content: center;
+        width: auto;
+    }
+
+    .btn {
+        margin: .5rem 0;
+        width: 150px;
+        padding: .25rem;
+    }
+
+    .btnLogin {
+        margin-right: 1.3rem;
+    }
+    
+}
