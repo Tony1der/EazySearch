@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 
 .header {
@@ -60,6 +60,48 @@ h3 {
     color: white;
 }
 
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    margin: 1rem;
+}
+
+.list {
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 1rem;
+    border: 3px solid hsl(292, 60%, 57%);
+}
+
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: hsl(292, 60%, 57%);
+}
+a:hover {
+    text-shadow: 0 0 5px hsl(292, 60%, 47%);
+    color: black;
+}
+
+span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+ul {
+    margin-top: 0;
+    margin-right: 2.5rem;
+}
+
+
+
+
+
 @media screen and (min-width: 810px) and (max-width: 1600px) {
     .wrapper {
         max-width: 1200px;
@@ -107,7 +149,7 @@ h3 {
     }
 
     .input {
-        width: 170px;
+        width: 200px;
         margin: 0 .3rem;
     }
 
@@ -115,4 +157,46 @@ h3 {
         margin-top: 0;
         width: auto;
     }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 900px;
+        margin: 1rem;
+    }
+
+    .list {
+        padding: 0.5rem 1.5rem;
+        margin-bottom: 1rem;
+        border: 3px solid hsl(292, 60%, 57%);
+    }
+
+    a {
+        text-decoration: none;
+    }
+    a:link, a:visited {
+        color: hsl(292, 60%, 57%);
+    }
+    a:hover {
+        text-shadow: 0 0 5px hsl(292, 60%, 47%);
+        color: black;
+    }
+
+    span {
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    html {
+        overflow-x: hidden;
+      }
+
+    ul {
+        margin-right: 2.5rem;
+    }
+
 }
